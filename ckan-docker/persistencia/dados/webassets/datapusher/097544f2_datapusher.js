@@ -1,0 +1,1 @@
+"use strict";ckan.module('datapusher_popover',function($){return{initialize:function(){$.proxyAll(this,/_on/);this.popover=this.el;this.popover.popover({html:true,title:this.options.title,content:this.options.content});$(document).on('click','.popover-close',this._onClose);},_onClose:function(){this.popover.popover('hide');}};});

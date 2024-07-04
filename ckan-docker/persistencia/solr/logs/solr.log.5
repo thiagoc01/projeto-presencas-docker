@@ -1,0 +1,52 @@
+2024-06-28 18:32:15.112 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+7
+2024-06-28 18:32:15.492 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-06-28 18:32:15.523 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-06-28 18:32:15.530 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2024-06-28 18:32:15.530 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-06-28 18:32:15.531 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /opt/solr-9.2.1
+2024-06-28 18:32:15.531 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-06-28T18:32:15.531520962Z
+2024-06-28 18:32:15.534 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /var/solr/logs/jvm_crash_8.log
+2024-06-28 18:32:15.538 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /var/solr/data (source: system property: solr.solr.home)
+2024-06-28 18:32:15.540 INFO  (main) [] o.a.s.c.SolrXmlConfig solr.xml not found in SOLR_HOME, using built-in default
+2024-06-28 18:32:15.541 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /opt/solr-9.2.1/server/solr/solr.xml
+2024-06-28 18:32:15.605 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/opt/solr-9.2.1/lib]
+2024-06-28 18:32:16.909 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-06-28 18:32:16.910 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-06-28 18:32:17.154 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2024-06-28 18:32:17.155 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [ckan]
+2024-06-28 18:32:17.234 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2024-06-28 18:32:17.363 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.IndexSchema Schema name=ckan-2.10
+2024-06-28 18:32:17.498 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.IndexSchema Loaded schema ckan-2.10/1.6 with uniqueid field index_id
+2024-06-28 18:32:17.518 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.CoreContainer Creating SolrCore 'ckan' using configuration from instancedir /var/solr/data/ckan, trusted=true
+2024-06-28 18:32:17.557 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.SolrCore Opening new SolrCore at [/var/solr/data/ckan], dataDir=[/var/solr/data/ckan/data/]
+2024-06-28 18:32:17.986 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-06-28 18:32:18.158 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@2de366bb{solr-jetty-context.xml,/solr,file:///opt/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-9.2.1/server/solr-webapp/webapp}
+2024-06-28 18:32:18.184 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2024_06_28.request.log
+2024-06-28 18:32:18.191 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@53812a9b{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2024-06-28 18:32:18.197 INFO  (main) [] o.e.j.s.Server Started Server@269f4bad{STARTING}[10.0.13,sto=0] @4550ms
+2024-06-28 18:32:18.483 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-06-28 18:32:18.509 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-06-28 18:32:18.510 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-06-28 18:32:18.593 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-06-28 18:32:18.594 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-06-28 18:32:18.871 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/ckan/conf
+2024-06-28 18:32:18.908 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2024-06-28 18:32:18.946 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-06-28 18:32:18.969 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-06-28 18:32:18.969 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-06-28 18:32:18.977 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-06-28 18:32:19.163 INFO  (qtp479459041-17) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=41
+2024-06-28 18:32:19.253 INFO  (qtp479459041-18) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=11
+2024-06-28 18:32:19.918 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema/name params={wt=json} status=0 QTime=10
+2024-06-28 18:32:21.327 INFO  (qtp479459041-25) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=3
+2024-06-28 18:32:21.344 INFO  (qtp479459041-20) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-06-28 18:32:22.114 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-06-28 18:32:22.123 INFO  (qtp479459041-25) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-06-28 18:32:24.021 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-06-28 18:32:24.023 INFO  (qtp479459041-25) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-06-28 18:32:24.035 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-06-28 18:32:24.039 INFO  (qtp479459041-20) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=0
+2024-06-28 18:32:25.011 INFO  (qtp479459041-20) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=1
+2024-06-28 18:32:25.020 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=0
+2024-06-28 18:32:25.036 INFO  (qtp479459041-20) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-06-28 18:32:25.046 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=2

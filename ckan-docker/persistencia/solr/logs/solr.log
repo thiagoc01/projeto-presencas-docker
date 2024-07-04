@@ -1,0 +1,64 @@
+2024-07-04 02:47:42.117 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+7
+2024-07-04 02:47:42.412 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-07-04 02:47:42.442 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-07-04 02:47:42.448 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2024-07-04 02:47:42.448 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-07-04 02:47:42.448 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /opt/solr-9.2.1
+2024-07-04 02:47:42.448 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-07-04T02:47:42.448645214Z
+2024-07-04 02:47:42.451 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /var/solr/logs/jvm_crash_7.log
+2024-07-04 02:47:42.455 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /var/solr/data (source: system property: solr.solr.home)
+2024-07-04 02:47:42.457 INFO  (main) [] o.a.s.c.SolrXmlConfig solr.xml not found in SOLR_HOME, using built-in default
+2024-07-04 02:47:42.457 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /opt/solr-9.2.1/server/solr/solr.xml
+2024-07-04 02:47:42.523 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/opt/solr-9.2.1/lib]
+2024-07-04 02:47:43.537 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-07-04 02:47:43.539 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-07-04 02:47:43.730 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2024-07-04 02:47:43.730 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [ckan]
+2024-07-04 02:47:43.761 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2024-07-04 02:47:43.871 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.IndexSchema Schema name=ckan-2.10
+2024-07-04 02:47:43.995 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.IndexSchema Loaded schema ckan-2.10/1.6 with uniqueid field index_id
+2024-07-04 02:47:44.016 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.CoreContainer Creating SolrCore 'ckan' using configuration from instancedir /var/solr/data/ckan, trusted=true
+2024-07-04 02:47:44.058 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.c.SolrCore Opening new SolrCore at [/var/solr/data/ckan], dataDir=[/var/solr/data/ckan/data/]
+2024-07-04 02:47:44.274 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-07-04 02:47:44.420 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61a002b1{solr-jetty-context.xml,/solr,file:///opt/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-9.2.1/server/solr-webapp/webapp}
+2024-07-04 02:47:44.429 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2024_07_04.request.log
+2024-07-04 02:47:44.432 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@53812a9b{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2024-07-04 02:47:44.434 INFO  (main) [] o.e.j.s.Server Started Server@269f4bad{STARTING}[10.0.13,sto=0] @3950ms
+2024-07-04 02:47:44.572 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-07-04 02:47:44.588 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-07-04 02:47:44.588 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-07-04 02:47:44.619 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-07-04 02:47:44.620 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2024-07-04 02:47:44.753 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/ckan/conf
+2024-07-04 02:47:44.771 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2024-07-04 02:47:44.778 INFO  (coreLoadExecutor-10-thread-1) [ x:ckan] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-07-04 02:47:44.800 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-07-04 02:47:44.800 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-07-04 02:47:44.809 INFO  (searcherExecutor-12-thread-1-processing-ckan) [ x:ckan] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-07-04 02:47:49.114 INFO  (qtp479459041-22) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=43
+2024-07-04 02:47:49.210 INFO  (qtp479459041-17) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=8
+2024-07-04 02:47:49.997 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=3
+2024-07-04 02:47:50.020 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:47:55.430 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:47:55.444 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:47:56.169 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:47:56.186 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:47:56.687 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema/name params={wt=json} status=0 QTime=8
+2024-07-04 02:47:57.998 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:47:58.013 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:47:58.697 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:47:58.706 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:48:00.530 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:48:00.535 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:48:00.543 INFO  (qtp479459041-18) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=0
+2024-07-04 02:48:00.543 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=0
+2024-07-04 02:48:01.491 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:48:01.491 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&rows=1&wt=json} hits=3 status=0 QTime=0
+2024-07-04 02:48:01.500 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:48:01.500 INFO  (qtp479459041-21) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=schema.xml} status=0 QTime=1
+2024-07-04 02:48:51.973 INFO  (qtp479459041-18) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"abdias_nascimento"+OR+id:"abdias_nascimento"&fq=site_id:"ckan_data"+%2Bentity_type:package&rows=1&wt=json} hits=1 status=0 QTime=24
+2024-07-04 02:48:52.266 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&facet.limit=50&df=text&fl=id+validated_data_dict&q.op=AND&fq=%2Bowner_org:"47fb1584-abd7-4412-a559-461cb794b299"+%2Bstate:(active)&fq=%2Bsite_id:"ckan_data"&sort=score+desc,+metadata_modified+desc&facet.mincount=1&rows=0&facet=false&wt=json} hits=3 status=0 QTime=23
+2024-07-04 02:48:52.375 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&facet.limit=-1&facet.field=groups&facet.field=owner_org&df=text&fl=groups&q.op=AND&fq=%2Bsite_id:"ckan_data"&fq=%2Bstate:active&facet.mincount=1&rows=2&facet=true&wt=json} hits=3 status=0 QTime=23
+2024-07-04 02:48:52.442 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&facet.limit=50&df=text&fl=id+validated_data_dict&q.op=AND&fq=%2Bowner_org:"47fb1584-abd7-4412-a559-461cb794b299"+%2Bstate:(active)&fq=%2Bsite_id:"ckan_data"&sort=score+desc,+metadata_modified+desc&facet.mincount=1&rows=0&facet=false&wt=json} hits=3 status=0 QTime=1
+2024-07-04 02:48:52.452 INFO  (qtp479459041-26) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&facet.limit=-1&facet.field=groups&facet.field=owner_org&df=text&fl=groups&q.op=AND&fq=%2Bsite_id:"ckan_data"&fq=%2Bstate:active&facet.mincount=1&rows=2&facet=true&wt=json} hits=3 status=0 QTime=1
+2024-07-04 02:48:53.048 INFO  (qtp479459041-23) [ x:ckan] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"7301b76d-bd81-4dbf-ac45-ca205fd082e0"+OR+id:"7301b76d-bd81-4dbf-ac45-ca205fd082e0"&fq=site_id:"ckan_data"+%2Bentity_type:package&rows=1&wt=json} hits=1 status=0 QTime=2

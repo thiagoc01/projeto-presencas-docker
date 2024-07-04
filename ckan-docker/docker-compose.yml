@@ -1,0 +1,80 @@
+services:
+
+  ckan:
+    container_name: ckan_ckan
+    ports:
+      - 5000:5000
+    image: ckan:2.10.1
+    networks:
+      - ckan-marilu
+    env_file:
+      - .env
+    depends_on:
+        - db
+        - solr
+        - redis
+        - datapusher
+    volumes:
+      - ./persistencia/dados:/var/lib/ckan
+      - /etc/localtime:/etc/localtime:ro
+      - ./persistencia/bibliotecas-python/site-packages:/usr/lib/python3.10/site-packages
+    restart: unless-stopped
+    
+  datapusher:
+    container_name: ckan_datapusher
+    build:
+      context: datapusher-plus/datapusher-plus/0.15.0
+    depends_on:
+      - db
+    networks:
+      - ckan-marilu
+    image: datapusher-plus
+    restart: unless-stopped
+    volumes:
+      - ./persistencia/datapusher/datapusher-plus.env:/srv/app/src/datapusher-plus/datapusher/.env
+      - /etc/localtime:/etc/localtime:ro
+  db:
+    container_name: ckan_postgresql
+    build:
+      context: postgresql/
+    networks:
+      - ckan-marilu
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+      - CKAN_DB_USER
+      - CKAN_DB_PASSWORD
+      - CKAN_DB
+      - DATASTORE_READONLY_USER
+      - DATASTORE_READONLY_PASSWORD
+      - DATASTORE_DB
+    volumes:
+      - ./persistencia/banco_dados:/var/lib/postgresql/data
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+     
+  solr:
+    container_name: ckan_solr
+    networks:
+      - ckan-marilu
+    image: ckan/ckan-solr:${SOLR_IMAGE_VERSION}
+    volumes:
+      - ./persistencia/solr/:/var/solr
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+
+  redis:
+    container_name: ckan_redis
+    image: redis:${REDIS_VERSION}
+    networks:
+      - ckan-marilu
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    
+networks:
+  ckan-marilu:
+    external: true
